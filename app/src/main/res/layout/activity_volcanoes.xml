@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_volcanoes"
+    style="@style/MatchParent"
+    android:background="@color/black"
+    tools:context="com.example.android.solarsystemquiz.Volcanoes">
+
+    <RelativeLayout style="@style/MatchParent">
+
+        <ImageView style="@style/Image" />
+
+        <LinearLayout style="@style/VerticalLayout">
+
+            <TextView
+                style="@style/WrapContent.SansSerifOrange.QuestionTitle"
+                android:text="Question 9"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="@string/Question9" />
+
+            <RadioGroup style="@style/VerticalLayout"
+                android:id="@+id/ninethQuestion">
+
+                <RadioButton
+                    android:id="@+id/nineA"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/NineA" />
+
+                <RadioButton
+                    android:id="@+id/nineB"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/NineB" />
+
+                <RadioButton
+                    android:id="@+id/niceC"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/NineC" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/Image"
+            android:src="@drawable/volcano"/>
+
+        <ImageButton
+            android:id="@+id/done"
+            style="@style/WrapContent.CheckVector"
+            android:onClick="startSun"/>
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/WrapContent.ClearVector"
+            android:onClick="startSolarSystemDeath"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/calculate_score"
+    style="@style/MatchParent"
+    android:background="@color/black"
+    tools:context="com.example.android.solarsystemquiz.CalculateScore">
+
+    <RelativeLayout style="@style/MatchParent">
+
+        <ImageView style="@style/Image" />
+
+        <LinearLayout style="@style/VerticalLayout">
+
+            <TextView
+                style="@style/WrapContent.SansSerifOrange.QuestionTitle"
+                android:text="Score"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/txtAnswer1"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 1: " />
+
+            <TextView
+                android:id="@+id/txtAnswer2"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 2: " />
+
+            <TextView
+                android:id="@+id/txtAnswer3"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 3: " />
+
+            <TextView
+                android:id="@+id/txtAnswer4"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 4: " />
+
+            <TextView
+                android:id="@+id/txtAnswer5"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 5: " />
+
+            <TextView
+                android:id="@+id/txtAnswer6"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 6: " />
+
+            <TextView
+                android:id="@+id/txtAnswer7"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 7: " />
+
+            <TextView
+                android:id="@+id/txtAnswer8"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 8: " />
+
+            <TextView
+                android:id="@+id/txtAnswer9"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 9: " />
+
+            <TextView
+                android:id="@+id/txtAnswer10"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Answer 10: " />
+
+            <TextView
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="----------" />
+
+            <TextView
+                android:id="@+id/txtAnswerTotal"
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="Total: " />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+

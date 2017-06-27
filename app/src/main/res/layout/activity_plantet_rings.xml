@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_plantet_rings"
+    android:background="@color/black"
+    style="@style/MatchParent"
+    tools:context="com.example.android.solarsystemquiz.PlantetRings">
+
+    <RelativeLayout
+        style="@style/MatchParent">
+
+        <ImageView
+            style="@style/Image"
+            android:src="@drawable/ring"/>
+
+        <LinearLayout
+            style="@style/VerticalLayout">
+
+            <TextView
+                style="@style/WrapContent.SansSerifOrange.QuestionTitle"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/Q5"/>
+
+            <TextView
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="@string/Question5"/>
+
+            <RadioGroup
+                style="@style/VerticalLayout"
+                android:id="@+id/fifthQuestion">
+
+                <RadioButton
+                    android:id="@+id/fiveA"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/FiveA"/>
+
+                <RadioButton
+                    android:id="@+id/fiveB"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/FiveB"/>
+
+                <RadioButton
+                    android:id="@+id/fiveC"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/FiveC"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/Image"
+            android:src="@drawable/ring"/>
+
+        <ImageButton
+            style="@style/WrapContent.CheckVector"
+            android:id="@+id/done"
+            android:onClick="startPhenomena"/>
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/WrapContent.ClearVector"
+            android:onClick="startEclipse"/>
+        </RelativeLayout>
+
+</RelativeLayout>

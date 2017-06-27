@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_uranus"
+    android:background="@color/black"
+    style="@style/MatchParent"
+    tools:context="com.example.android.solarsystemquiz.Uranus">
+
+    <RelativeLayout style="@style/MatchParent">
+
+        <ImageView style="@style/Image" />
+
+        <LinearLayout style="@style/VerticalLayout">
+
+            <TextView
+                style="@style/WrapContent.SansSerifOrange.QuestionTitle"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/Q7" />
+
+            <TextView
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="@string/Question7" />
+
+            <RadioGroup style="@style/VerticalLayout"
+                android:id="@+id/seventhQuestion">
+
+                <RadioButton
+                    android:id="@+id/sevenA"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/SevenA" />
+
+                <RadioButton
+                    android:id="@+id/sevenB"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/SevenB" />
+
+                <RadioButton
+                    android:id="@+id/sevenC"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/SevenC" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/Image"
+            android:src="@drawable/uranusplanet"/>
+
+        <ImageButton
+            android:id="@+id/done"
+            style="@style/WrapContent.CheckVector"
+            android:onClick="startSolarSystemDeath"/>
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/WrapContent.ClearVector"
+            android:onClick="startPhenomena"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+

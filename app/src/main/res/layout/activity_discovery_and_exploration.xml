@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_discovery_and_exploration"
+    style="@style/MatchParent"
+    android:background="@color/black"
+    tools:context="com.example.android.solarsystemquiz.DiscoveryAndExploration">
+
+    <RelativeLayout style="@style/MatchParent">
+
+        <ImageView
+            style="@style/Image"
+            android:src="@drawable/sunorbit" />
+
+        <LinearLayout style="@style/VerticalLayout">
+
+            <TextView
+                style="@style/WrapContent.SansSerifOrange.QuestionTitle"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/Q1" />
+
+            <TextView
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="@string/Question1" />
+
+            <RadioGroup style="@style/VerticalLayout"
+                android:id="@+id/firstQuestion">
+
+                <RadioButton
+                    android:id="@+id/oneA"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/OneA" />
+
+                <RadioButton
+                    android:id="@+id/oneB"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/OneB" />
+
+                <RadioButton
+                    android:id="@+id/oneC"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/OneC" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/done"
+            style="@style/WrapContent.CheckVector"
+            android:onClick="startPlanetsSize" />
+
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/WrapContent.ClearVector"
+            android:onClick="startMainActivity"/>
+    </RelativeLayout>
+
+</FrameLayout>
+

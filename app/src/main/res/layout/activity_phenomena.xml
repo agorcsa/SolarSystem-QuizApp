@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_phenomena"
+    android:background="@color/black"
+    style="@style/MatchParent"
+    tools:context="com.example.android.solarsystemquiz.Phenomena">
+
+    <RelativeLayout style="@style/MatchParent">
+
+        <ImageView style="@style/Image" />
+
+        <LinearLayout
+            style="@style/VerticalLayout"
+            android:layout_width="match_parent">
+
+            <TextView
+                style="@style/WrapContent.SansSerifOrange.QuestionTitle"
+                android:text="@string/Q6"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/Question6" />
+
+            <RadioGroup style="@style/VerticalLayout"
+              android:layout_marginLeft="85dp"
+                android:id="@+id/sixthQuestion">
+
+                <RadioButton
+                    android:id="@+id/sixA"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/SixA" />
+
+                <RadioButton
+                    android:id="@+id/sixB"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/SixB" />
+
+                <RadioButton
+                    android:id="@+id/sixC"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/SixC" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/Image"
+            android:src="@drawable/marsplanet"/>
+
+        <ImageButton
+            android:id="@+id/done"
+            style="@style/WrapContent.CheckVector"
+            android:onClick="startUranus"/>
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/WrapContent.ClearVector"
+            android:onClick="startPlanetRings"/>
+
+    </RelativeLayout>
+</RelativeLayout>
+

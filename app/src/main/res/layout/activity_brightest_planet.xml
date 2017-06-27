@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_brightest_planet"
+    android:background="@color/black"
+    style="@style/MatchParent"
+    tools:context="com.example.android.solarsystemquiz.BrightestPlanet">
+
+    <RelativeLayout style="@style/MatchParent">
+
+        <ImageView
+            style="@style/Image"
+            android:src="@drawable/brightplanet"/>
+
+        <LinearLayout style="@style/VerticalLayout">
+
+            <TextView
+                style="@style/WrapContent.SansSerifOrange.QuestionTitle"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/Q3" />
+
+            <TextView
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="@string/Question3" />
+
+            <RadioGroup style="@style/VerticalLayout"
+                android:id="@+id/thirdQuestion">
+
+                <RadioButton
+                    android:id="@+id/treeA"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/ThreeA" />
+
+                <RadioButton
+                    android:id="@+id/treeB"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/ThreeB" />
+
+                <RadioButton
+                    android:id="@+id/treeC"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/ThreeC" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/done"
+            style="@style/WrapContent.CheckVector"
+            android:onClick="startEclipse" />
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/WrapContent.ClearVector"
+            android:onClick="startPlanetsSize" />
+
+    </RelativeLayout>
+</RelativeLayout>

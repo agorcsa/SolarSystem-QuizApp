@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_eclipse"
+    android:background="@color/black"
+    style="@style/MatchParent"
+    tools:context="com.example.android.solarsystemquiz.Eclipse">
+
+    <RelativeLayout style="@style/MatchParent">
+
+        <ImageView style="@style/Image" />
+
+        <LinearLayout style="@style/VerticalLayout">
+
+            <TextView
+                style="@style/WrapContent.SansSerifOrange.QuestionTitle"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/Q4" />
+
+            <TextView
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="@string/Question4" />
+
+            <RadioGroup style="@style/VerticalLayout"
+                android:id="@+id/fourthQuestion">
+
+                <RadioButton
+                    android:id="@+id/fourA"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/FourA" />
+
+                <RadioButton
+                    android:id="@+id/fourB"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/FourB" />
+
+                <RadioButton
+                    android:id="@+id/fourC"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/FourC" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/Image"
+            android:src="@drawable/eclipse"/>
+
+        <ImageButton
+            android:id="@+id/done"
+            android:onClick="startPlanetRings"
+            style="@style/WrapContent.CheckVector" />
+
+        <ImageButton
+            android:id="@+id/cancel"
+            android:onClick="startBrightestPlanet"
+            style="@style/WrapContent.ClearVector" />
+
+    </RelativeLayout>
+</RelativeLayout>
+

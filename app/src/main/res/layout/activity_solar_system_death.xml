@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_solar_system_death"
+    android:background="@color/black"
+    style="@style/MatchParent"
+    tools:context="com.example.android.solarsystemquiz.SolarSystemDeath">
+
+    <RelativeLayout style="@style/MatchParent">
+
+        <ImageView style="@style/Image" />
+
+        <LinearLayout style="@style/VerticalLayout">
+
+            <TextView
+                style="@style/WrapContent.SansSerifOrange.QuestionTitle"
+                android:text="@string/Q8"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                style="@style/WrapContent.SansSerifWhite.QuestionText"
+                android:text="@string/Question8"
+                android:layout_marginLeft="10dp"
+               />
+
+            <RadioGroup style="@style/VerticalLayout"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/eigththQuestion">
+
+                <RadioButton
+                    android:id="@+id/eightA"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/EightA" />
+
+                <RadioButton
+                    android:id="@+id/eightB"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/EightB" />
+
+                <RadioButton
+                    android:id="@+id/eightC"
+                    style="@style/WrapContent.RadioButton"
+                    android:text="@string/EightC" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/Image"
+            android:src="@drawable/death"/>
+
+        <ImageButton
+            android:id="@+id/done"
+            style="@style/WrapContent.CheckVector"
+            android:onClick="startVulcanoes"/>
+
+        <ImageButton
+            android:id="@+id/cancel"
+            style="@style/WrapContent.ClearVector"
+            android:onClick="startUranus"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

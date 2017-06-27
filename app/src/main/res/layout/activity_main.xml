@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    style="@style/MatchParent"
+    tools:context="com.example.android.solarsystemquiz.MainActivity">
+
+
+    <ImageView
+        style="@style/MatchParent"
+        android:background="@drawable/intro" />
+
+    <TextView
+        android:id="@+id/theSolarSystem"
+        style="@style/WrapContent.AppTitle" />
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:textColor="@color/white"
+        android:inputType="textCapWords"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="sans-serif"
+        android:onClick="startScrollView"
+        android:padding="10dp"
+        android:text="discover"
+        android:textStyle="bold" />
+</RelativeLayout>
